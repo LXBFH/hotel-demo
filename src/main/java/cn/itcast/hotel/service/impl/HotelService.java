@@ -6,6 +6,9 @@ import cn.itcast.hotel.service.IHotelService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author 11986
+ */
 @Service
 public class HotelService extends ServiceImpl<HotelMapper, Hotel> implements IHotelService {
 }

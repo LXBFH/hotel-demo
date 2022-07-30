@@ -52,7 +52,7 @@ public class HotelDocumentTest {
             request.add(
                     new IndexRequest("hotel")
                             .id(hotelDoc.getId().toString())
-                            .source(JSON.toJSONString(hotelDoc), XContentType.JSON));
+                            .source( JSON.toJSONString(hotelDoc), XContentType.JSON));
         }
         //3.发送请求
         client.bulk(request, RequestOptions.DEFAULT);
